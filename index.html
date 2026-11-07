@@ -894,35 +894,6 @@ footer{ background:var(--navy-deep); border-top:1px solid rgba(240,182,40,.2); c
       </svg>
     </a>
 
-    <!-- ===== Carrito de pedido ===== -->
-    <button
-      type="button"
-      id="carrito-fab"
-      class="cart-fab"
-      aria-label="Ver mi pedido"
-    >
-      🛒
-      <span id="carrito-badge" class="cart-badge is-empty">0</span>
-    </button>
-
-    <div id="carrito-overlay" class="cart-overlay"></div>
-
-    <aside id="carrito-panel" class="cart-panel" aria-hidden="true">
-      <div class="cart-panel-header">
-        <h3>Tu pedido</h3>
-        <button type="button" id="carrito-cerrar" class="cart-close" aria-label="Cerrar">&times;</button>
-      </div>
-      <div id="carrito-lista" class="cart-lista">
-        <p class="cart-vacio">Todavía no agregaste productos.</p>
-      </div>
-      <div class="cart-panel-footer">
-        <button type="button" id="carrito-vaciar" class="btn btn-outline-dark">Vaciar</button>
-        <a id="carrito-enviar" class="btn btn-gold" target="_blank" rel="noopener"
-          >Enviar pedido por WhatsApp</a
-        >
-      </div>
-    </aside>
-
     <!-- ===== Scripts ===== -->
     <script defer>
 /**
@@ -1093,7 +1064,9 @@ footer{ background:var(--navy-deep); border-top:1px solid rgba(240,182,40,.2); c
     if (elPanel && elPanel.classList.contains("is-open")) pintarPanelCarrito();
   }
 
+  // La web es informativa: sin carrito ni botones de "Agregar al pedido".
   function controlesCarritoHTML(id) {
+    return "";
     var cant = (carrito[id] && carrito[id].cantidad) || 0;
     if (cant > 0) {
       return (
