@@ -340,6 +340,9 @@ footer{ background:var(--navy-deep); border-top:1px solid rgba(240,182,40,.2); c
 
 
 /* ---------- HOW IT WORKS ---------- */
+.contacto .section-head{ margin-bottom:0; }
+.contacto-nota{ font-size:.88rem; font-style:italic; }
+.contacto-acciones{ margin-top:24px; display:flex; justify-content:center; }
 .how{ background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
 .how-grid{
   display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
@@ -632,6 +635,7 @@ footer{ background:var(--navy-deep); border-top:1px solid rgba(240,182,40,.2); c
           <a href="#como-funciona">Cómo trabajamos</a>
           <a href="#catalogo">Catálogo</a>
           <a href="#retiro">Envíos y ubicación</a>
+          <a href="#contacto">Contacto</a>
         </nav>
         <a class="btn-wsp-mini" href="#catalogo">Ver catálogo</a>
       </div>
@@ -811,6 +815,33 @@ footer{ background:var(--navy-deep); border-top:1px solid rgba(240,182,40,.2); c
       </div>
     </section>
 
+    <!-- ===== Contacto: solo consultas y reclamos (no pedidos) ===== -->
+    <section class="how contacto" id="contacto">
+      <div class="section">
+        <div class="section-head">
+          <div class="eyebrow">Contacto</div>
+          <h2>¿Necesitás comunicarte con nosotros?</h2>
+          <p>
+            Escribinos si tenés una consulta sobre la empresa, una sugerencia
+            o un reclamo.
+          </p>
+          <p class="contacto-nota">
+            Este canal es solo para comunicarte con la empresa. No se toman
+            pedidos por este medio.
+          </p>
+          <div class="contacto-acciones">
+            <a
+              class="btn btn-gold"
+              href="https://wa.me/5493764102679?text=Hola%2C%20quiero%20comunicarme%20con%20L%26M%20por%20una%20consulta%20o%20reclamo%3A%20"
+              target="_blank"
+              rel="noopener"
+              >Consultas y reclamos</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== Pie ===== -->
     <footer>
       <div class="footer-wrap">
@@ -822,6 +853,7 @@ footer{ background:var(--navy-deep); border-top:1px solid rgba(240,182,40,.2); c
           <a href="#como-funciona">Cómo trabajamos</a>
           <a href="#catalogo">Catálogo</a>
           <a href="#retiro">Envíos y ubicación</a>
+          <a href="#contacto">Contacto</a>
         </div>
         <p class="footer-fine">
           Venta mayorista de productos de almacén y kiosco · Garupá, Misiones,
